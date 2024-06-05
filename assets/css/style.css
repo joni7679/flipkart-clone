@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dd: #8DA4F1;
+    --bgblack: #212121;
+    --white: #fff;
+    --yellow: #FFC200;
+    --secprimarycolor: #F0F5FF;
+    ---primary-color: #2874f0;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+header {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: center;
+    gap: 24px;
+    font-family: Inter-Regular;
+    text-transform: capitalize;
+}
+
+.logo {
+    width: 175px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.search-bar {
+    width: 45vw;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 18px 44px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--secprimarycolor);
+    outline: none;
+    /* font-size: 17px; */
+    font-family: Inter-Regular;
+
+}
+
+.fectures {
+    width: 50vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+}
+.sm-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.user,
+.card,
+.seller {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: var(---primary-color);
+    color: var(--white);
+}
+
+.user-id {
+    width: 280px;
+    /* height: 300px; */
+    background-color: var(--white);
+    position: absolute;
+    top: 64px;
+    right: 351px;
+    border-radius: 8px;
+    padding: 5px 9px;
+    display: none;
+    transition: all 0.5s;
+    box-shadow: var(--box-shadow);
+}
+
+.new-acount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+
+}
+
+.new-acount h4 {
+    padding: 8px;
+}
+
+.new-acount a {
+    text-decoration: none;
+    color: var(---primary-color);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #fafafa;
+}
+
+.box img {
+    width: 19px;
+}
+
+.box p {
+    font-size: 13px;
+}
+
+.product-section {
+    width: 95%;
+    background-color: white;
+    /* height: 60px; */
+    margin: 14px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 15px;
+    box-shadow: var(--box-shadow);
+    text-transform: capitalize;
+    font-family: Inter-SemiBold;
+
+
+}
+
+.product-box {
+    text-align: center;
+    width: 100px;
+    /* height: 100px; */
+    /* border: 1px solid red; */
+}
+
+.product-box img {
+    width: 64px;
+    height: 64px;
+}
+
+.product-box p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.banner-section {
+    width: 100%;
+    height: 250px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-arrow,.right-arrow{
+    width: 60px;
+    height: 80px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 7;
+    cursor: pointer;
+
+}
+
+.left-arrow i,.right-arrow i{
+    font-size: 18px;
+    color: rgb(123, 122, 122);
+    font-size: 18px;
+}
+.left-arrow
+{
+    left: 0;
+    top: 25%;
+}
+.right-arrow{
+    right: 0;
+    top: 25%;
+}
